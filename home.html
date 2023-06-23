@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>CDT Visuals</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+
+    <link rel="stylesheet" href="state-template/css/cagov.core.min.css" />
+    <link
+      rel="stylesheet"
+      href="state-template/css/colortheme-oceanside.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="state-template/js/cagov.core.min.js"
+    ></script>
+    <link href="homestyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="primary">
+    <header role="banner" id="header" class="global-header fixed">
+      <div id="skip-to-content">
+        <a href="#main-content">Skip to Main Content</a>
+      </div>
+
+      <div class="utility-header">
+        <div class="container">
+          <div class="flex-row">
+            <div class="social-media-links">
+              <div class="header-cagov-logo">
+                <a href="https://ca.gov">
+                  <span class="sr-only">CA.gov</span>
+
+                  <span class="ca-gov-logo-svg"></span>
+                </a>
+              </div>
+
+              <p class="official-tag">
+                <span class="desktop-only">Official website of the</span>
+
+                State of California
+              </p>
+            </div>
+
+            <div class="settings-links"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header branding with light gray background -->
+
+      <div class="section-default">
+        <div class="branding">
+          <div class="header-organization-banner">
+            <a href="">
+              <div class="logo-assets">
+                <img
+                  src="cdtbackground.png"
+                  class="logo-img"
+                  alt="State Template Logo"
+                  style="aspect-ratio: 80 / 70"
+                />
+
+                <div class="logo-text">
+                  <span class="logo-state">State of California</span>
+
+                  <span class="logo-dept">Kesavan Ramakrishnan's CDT Page</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile navigation controls -->
+
+      <div class="mobile-controls">
+        <span class="mobile-control-group mobile-header-icons">
+          <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+        </span>
+
+        <div class="mobile-control-group main-nav-icons">
+          <button
+            id="nav-icon3"
+            class="mobile-control toggle-menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="navigation-search full-width-nav container">
+        <!-- navigation types -->
+        <nav
+          id="navigation"
+          class="main-navigation dropdown"
+          aria-label="Main navigation"
+        >
+          <ul id="nav_list" class="top-level-nav">
+            <li class="nav-item">
+              <a class="first-level-link" href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="first-level-link" href="maps.html">Maps & Charts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="main-content" class="main-content">
+      <main class="main-primary" id="main">
+        <div class="section-default">
+          <div class="container p-a-md">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 p-y-md order-2 order-md-1"></div>
+              <h1>K7's Summer Internship at the CDT</h1>
+              <div class="aboutme">
+                <img src="cdtid.jpeg" id="idimg" />
+                <div id="sidebar">
+                  <p id="descrip">
+                    Hi my name is Kesavan Ramakrishnan and I'm a rising senior
+                    at Vista Del Lago High School in Folsom, CA. I was able to
+                    get the opportunity to work with CDT through the CTE Program
+                    that our school district holds. Throughout my one month
+                    here, I've met countless groups and gained a lot of
+                    experience of how it is to work in a professional setting.
+                    I've also gained technical skills and explored different
+                    tools such as leaflet, ARCGIS, etc. On this website theres
+                    links at the top to different maps and charts I created so
+                    please check them out!
+                  </p>
+                </div>
+                
+              </div>
+              <div id="holdwhat">
+                <h2 id="whative">What I've done</h2>
+                <li class="bullets">
+                  Learned Leaflet, GIS Tools, and became familiar with Azure,
+                  Snowflake, and other industrial tools
+                </li>
+                <div class="space"></div>
+                <li class="bullets">
+                  Met many different ODS Teams including the Web Dev, Data,
+                  MMBI, GIS, and UX teams
+                </li>
+                <div class="space"></div>
+                <li class="bullets">
+                  Attended a ODS full in-person team meeting, Statewide GIS
+                  Community of Practice Monthly meeting, etc
+                </li>
+                <div class="space"></div>
+                <li class="bullets">Toured the high-security data center</li>
+              </div>
+              <h2 id="time" >Timeline</h2>
+              <div class="timeline">
+                <div class="timeline__component">
+                  <div class="timeline__date timeline__date--right">
+                    Week 1 (May 30 - June 2)
+                  </div>
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title">Set Up</h2>
+                  <p class="timeline__paragraph">
+                    During the first week I got set up with my state account and
+                    start playing with tools such as Leaflet and looked through
+                    datasets on the GeoPortal
+                  </p>
+                  <img
+                    src="calaptoppic.png"
+                    alt=""
+                    style="width: 400px; height: auto"
+                  />
+                </div>
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title">
+                    Meeting Different Teams / Planning
+                  </h2>
+                  <p class="timeline__paragraph">
+                    During my second week I met a lot of different groups at CDT
+                    like the GIS, MMBI, ADF, and Data Teams. I also started to
+                    plan out what I wanted to do at my time here and searched
+                    through datasets to use.
+                  </p>
+                  <img
+                    src="beginningwork.png"
+                    alt=""
+                    style="width: 400px; height: auto"
+                  />
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component">
+                  <div class="timeline__date">Week 2 (June 5 - June 9)</div>
+                </div>
+                <div class="timeline__component">
+                  <div class="timeline__date timeline__date--right">
+                    Week 3 (June 12 - June 16)
+                  </div>
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                </div>
+                <div class="timeline__component timeline__component--bg">
+                  <h2 class="timeline__title">Designing Week</h2>
+                  <p class="timeline__paragraph">
+                    This week I spent most my time designing what I thouhgt my
+                    website should look like as well as finding the datasets to
+                    fit what I wanted. I also met with the Dev Team, UX Team,
+                    and full ODS Team.
+                  </p>
+                  <img
+                    src="UXgraphic.png"
+                    alt=""
+                    style="width: 400px; height: auto"
+                  />
+                </div>
+                <div
+                  class="timeline__component timeline__component--bottom timeline__component--bg"
+                >
+                  <h2 class="timeline__title">Building Week</h2>
+                  <p class="timeline__paragraph">
+                    Spent the entirety of this week just building out my website
+                    and ironing out as many things as I could. Came across a lot
+                    of hiccups but hopefully this website can justify the effort
+                    put into it!
+                  </p>
+                  <img
+                    src="codess.png"
+                    alt=""
+                    style="width: 400px; height: auto"
+                  />
+                </div>
+                <div class="timeline__middle">
+                  <div class="timeline__point"></div>
+                  <div class="timeline__point timeline__point--bottom"></div>
+                </div>
+                <div class="timeline__component timeline__component--bottom">
+                  <div class="timeline__date">Week 4 (June 19 - June 23)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="homescript.js"></script>
+  </body>
+</html>

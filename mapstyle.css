@@ -1,0 +1,104 @@
+#mapCrime {
+  height: 500px;
+  width: 500px;
+  border: 5px solid #1e1369;
+}
+
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #046b99;
+}
+.active {
+  background-color: #04aa6d;
+}
+body {
+  margin: 0px;
+  background-color: lightblue;
+}
+#mapPoverty {
+  height: 500px;
+  width: 500px;
+  border: 5px solid #1e1369;
+}
+
+#allmaps {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+
+#crimeHolder,
+#povertyHolder {
+  flex: 1;
+}
+
+#crimeHolder {
+  margin-right: 10px;
+}
+
+#povertyHolder {
+  margin-left: 10px;
+}
+
+
+#chart {
+  width: 400px;
+  height: 200px;
+  border: 1px solid #ccc;
+  position: relative;
+}
+
+.bar {
+  background-color: #007bff;
+  height: 100%;
+  transition: width 0.5s;
+}
+
+.label {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  font-size: 12px;
+}
+#myChartC, #myChartP{
+  flex: 1;
+  width:500px;
+
+}
+#myChartC{
+  width:500px;
+  height:500px;
+}
+#myChartP{
+  width:500px;
+  height:500px;
+}
+
+#mapCrime,#mapPoverty{
+  z-index: 1;
+}
+
+.global-header.fixed {
+
+  z-index: 5000;
+ 
+  position: sticky;
+ 
+ }

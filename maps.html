@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0" />
+    <title>CDT Visuals</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    />
+    <link rel="stylesheet" href="state-template/css/cagov.core.min.css" />
+    <link
+      rel="stylesheet"
+      href="state-template/css/colortheme-oceanside.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="state-template/js/cagov.core.min.js"
+    ></script>
+    <link href="mapstyle.css" rel="stylesheet" type="text/css" />
+  </head>
+
+  <body class="primary">
+    <header role="banner" id="header" class="global-header fixed">
+      <div id="skip-to-content">
+        <a href="#main-content">Skip to Main Content</a>
+      </div>
+
+      <div class="utility-header">
+        <div class="container">
+          <div class="flex-row">
+            <div class="social-media-links">
+              <div class="header-cagov-logo">
+                <a href="https://ca.gov">
+                  <span class="sr-only">CA.gov</span>
+
+                  <span class="ca-gov-logo-svg"></span>
+                </a>
+              </div>
+
+              <p class="official-tag">
+                <span class="desktop-only">Official website of the</span>
+
+                State of California
+              </p>
+            </div>
+
+            <div class="settings-links"></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- header branding with light gray background -->
+
+      <div class="section-default">
+        <div class="branding">
+          <div class="header-organization-banner">
+            <a href="">
+              <div class="logo-assets">
+                <img
+                  src="cdtbackground.png"
+                  class="logo-img"
+                  alt="State Template Logo"
+                  style="aspect-ratio: 80 / 70"
+                />
+
+                <div class="logo-text">
+                  <span class="logo-state">State of California</span>
+
+                  <span class="logo-dept">Interesting Visuals</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- mobile navigation controls -->
+
+      <div class="mobile-controls">
+        <span class="mobile-control-group mobile-header-icons">
+          <!-- Add more mobile controls here. These will be on the right side of the mobile page header section -->
+        </span>
+
+        <div class="mobile-control-group main-nav-icons">
+          <button
+            id="nav-icon3"
+            class="mobile-control toggle-menu"
+            aria-expanded="false"
+            aria-controls="navigation"
+          >
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span></span>
+
+            <span class="sr-only">Menu</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="navigation-search full-width-nav container">
+        <!-- navigation types -->
+        <nav
+          id="navigation"
+          class="main-navigation dropdown"
+          aria-label="Main navigation"
+        >
+          <ul id="nav_list" class="top-level-nav">
+            <li class="nav-item">
+              <a class="first-level-link" href="home.html">Home</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="first-level-link" href="maps.html">Maps & Charts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <div id="main-content" class="main-content">
+      <main class="main-primary" id="main">
+        <div class="section-default">
+          <div class="container p-a-md">
+            <div class="row">
+              <div class="col-md-6 col-lg-4 p-y-md order-2 order-md-1"></div>
+              <h1>Crime Rate per 100,000 People vs Poverty Rate</h1>
+              <h5 style="margin-bottom:0px;">Click on different counties to see their Crime/Poverty Rate and the charts fill up at the bottom</h3>
+              <div id="allmaps">
+                <div id="crimeHolder">
+                  <h3 style="margin-bottom:10px;">Description:</h3>
+                  <p id="descripC" style="height:58px"></p>
+                  <div id="mapCrime"></div>
+                  <p>Filter By # of Crimes per 100,000</p>
+                  <input
+                    type="number"
+                    id="inputLevel"
+                    placeholder="Minimum Crimes"
+                  />
+                
+                </div>
+
+                <div id="povertyHolder">
+                  <h3 style="margin-bottom:10px;">Description:</h3>
+                  <p id="descripP" style="height:58px;margin-bottom:10px;"></p>
+                  <div id="mapPoverty"></div>
+                  <p>Filter By Poverty Rate %</p>
+                  <input
+                    type="number"
+                    id="inputPov"
+                    placeholder="Minimum Poverty Rate"
+                  />
+                 
+                </div>
+
+              </div>
+              <div style="display: flex; width: -webkit-fill-available;margin-top:150px;">
+                <div style="width:500px;height:500px; margin-right: 100px;">
+                  <canvas id="myChartC"></canvas>
+                </div>
+                <div style="width:500px;height:500px;">
+                  <canvas id="myChartP"></canvas>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="mapscript.js"></script>
+  </body>
+</html>
